@@ -19,7 +19,6 @@ def iniciar_servidor():
             datos = cliente_socket.recv(4096)
             if not datos:
                 break
-            pass
         cliente_socket.close()
 
 #manejar los archivos entre 'entrada y procesado'
@@ -32,7 +31,6 @@ def sincronizar_archivos(nombre_archivo):
         print(f"Archivo {nombre_archivo} sincronizado y movido a procesado.")
     else:
         print(f"No se encontró el archivo {nombre_archivo} en la carpeta de entrada.")
-    pass
 
 #guardas los eventos del server en carpeta 'logs'
 def registrar_log(mensaje):
